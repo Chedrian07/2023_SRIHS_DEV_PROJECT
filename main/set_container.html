@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRIHS_DEV_PROJECT</title>
     <link rel="stylesheet" href="./index.css">
     <style>
       html,body {
@@ -25,7 +26,7 @@
     <div class="col-md-2 shadow-lg d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
           <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-          <span class="fs-4">PROJECT_NAME</span>
+          <span class="fs-4">PROJECT</span>
         </a>
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
@@ -69,17 +70,16 @@
                   <!-- Container 이름 작성란 -->
                   <label for="name" class="mb-2">Name</label>
                   <div for="name" class="input-group">
-                    <input type="text" id="name" class="form-control" placeholder="공백은 제거됩니다" required>
+                    <input type="text" id="name" class="form-control mb-3" placeholder="공백은 제거됩니다" required>
                     <select id="filetype" style="background-color: rgb(239, 239, 239); width: 15%;" disabled>
                       <option value="txt" selected>.txt</option>
                     </select>
                   </div>
                 </li>
-                <hr>
                 <li>
                   <!-- Ubuntu 버전 선택란 -->
                   <label for="version" class="mb-2">Ubuntu Version</label>
-                  <select id="version" class="form-select" required>
+                  <select id="version" class="form-select mb-3" required>
                     <option selected disabled value="">Choose...</option>
                     <option value="Ubuntu 22.04">Ubuntu 22.04</option>
                     <option value="Ubuntu 20.04">Ubuntu 20.04</option>
@@ -88,11 +88,10 @@
                     <option value="Ubuntu 14.04">Ubuntu 14.04</option>
                   </select>
                 </li>
-                <hr>
                 <li>
                   <!-- 사용 언어 선택란 -->
                   <label for="language" class="mb-2">Programing Language</label>
-                  <select id="language" class="form-select" required>
+                  <select id="language" class="form-select mb-3" required>
                     <option selected disabled value="">Choose...</option>
                     <option value="HTML">HTML</option>
                     <option value="CSS">CSS</option>
@@ -102,16 +101,14 @@
                     <option value="Python">Python</option>
                   </select>
                 </li>
-                <hr>
                 <li>
                   <label for="engine" class="mb-2">Web Engine</label>
-                  <select id="engine" class="form-select" required>
+                  <select id="engine" class="form-select mb-3" required>
                     <option selected disabled value="">Choose...</option>
                     <option value="Apache2">Apache2</option>
                     <option value="Nginx">Nginx</option>
                   </select>
                 </li>
-                <hr>
                 <li>
                   <!-- 저장할 폴더 선택란 안됨!!!! 어케함??? -->
                   <label for="folder" class="mb-2">Forder Location</label>
@@ -121,22 +118,19 @@
                 <li>
                   <!-- Container 설명 작성란 -->
                   <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="explanation" style="height: 100px"></textarea>
+                    <textarea class="form-control mb-3 mt-3" placeholder="Leave a comment here" id="explanation" style="height: 100px"></textarea>
                     <label for="explanation">Container Explanation</label>
                   </div>
                 </li>
-                <hr>
                 <li>
-                  <label for="color mb-3">Color Picker</label>
-                  <input type="color" class="form-control form-control-color" id="color" value="#000000">
+                  <label for="color" class="mb-2">Color Picker</label>
+                  <input type="color" class="form-control form-control-color mb-3" id="color" value="#000000">
                 </li>
-                <hr>
               </ul>
             </fieldset>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-              <button class="btn btn-dark mb-3 mt-3" onclick="setCon();">SUBMIT</button>
+              <button class="btn btn-dark" onclick="setCon();">SUBMIT</button>
             </div>
-            <div id="result">hi</div>
           </form>
         </div>
       </div>
