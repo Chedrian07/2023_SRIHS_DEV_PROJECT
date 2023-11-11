@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Set Container</title>
+    <link rel="stylesheet" type="text/css" href="./css/set_container.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Set Container</h1>
+        <form>
+            <label for="version-select">Ubuntu Version:</label>
+            <select id="version-select" name="version">
+                <option value="Ubuntu 22.04">Ubuntu 22.04</option>
+                <option value="Ubuntu 20.04">Ubuntu 20.04</option>
+                <option value="Ubuntu 18.04">Ubuntu 18.04</option>
+            </select><br><br>
+
+            <label for="language">Development Purpose</label>
+            <select id="language" name="language">
+                <option value="Front-end">프론트 엔드</option>
+                <option value="Back-end">백엔드</option>
+                <option value="Full-stack">풀스택</option>
+                <option value="Mobile">모바일</option>
+                <option value="Game">게임</option>
+                <option value="AI/ML">인공지능/머신러닝</option>
+                <option value="Data Science">데이터 사이언스</option>
+                <option value="DevOps">데브옵스</option>
+                <option value="Other">기타</option>
+            </select><br><br>
+
+            <label for="engine">Web Engine:</label>
+            <select id="engine" name="engine">
+                <option value="Apache2">Apache2</option>
+                <option value="Nginx">Nginx</option>
+            </select><br><br>
+
+            <div class="input-field"></div>
+                <label for="container-details">Container Details:</label>
+                <br>
+                <textarea id="container-details" name="container-details" rows="10" cols="50"></textarea><br><br>
+            </div>
+        </form>
+    </div>
+    <script src="js/set_container.js"></script>
+</body>
+</html>
